@@ -21,7 +21,7 @@
 
     <browser:page
           for="*"
-          name="listando_anuncios"
+          name="listano"
           permission="zope2.View"
           class=".anuncio.Anuncios"
           />
