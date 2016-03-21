@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="prodam.teste">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <includeDependencies package="." />
+
+  <include package=".browser" />
+
+
+  <genericsetup:registerProfile
+      name="default"
+      title="prodam.teste"
+      directory="profiles/default"
+      description="Installs the prodam.teste add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="prodam.teste-postInstall"
+      title="prodam.teste post_install import step"
+      description="Post install import step from prodam.teste"
+      handler=".setuphandlers.post_install">
+  </genericsetup:importStep>
+
+</configure>
