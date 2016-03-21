@@ -22,7 +22,7 @@
     <browser:page
           for="*"
           name="listando_anuncios"
-          permission="zope2.Public"
+          permission="zope2.View"
           class=".anuncio.Anuncios"
           />
 

@@ -10,6 +10,7 @@
     <metal:content-core fill-slot="main">
       <metal:block define-macro="main">
          <div tal:define="anuncios view/getAnuncios"  tal:repeat="anuncio anuncios" >
+            <h1 tal:define="titulo python:anuncio.getTitle()" tal:content="string:${titulo}"></h1> 
          </div>
       </metal:block>
     </metal:content-core>
