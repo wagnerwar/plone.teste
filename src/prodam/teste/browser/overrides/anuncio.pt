@@ -15,7 +15,7 @@
          <div id="anuncios" >
          <div tal:define="anuncios view/getAnuncios"  tal:attributes="class string:anuncio-ativo"  tal:repeat="anuncio anuncios" >
             <h1 tal:define="titulo python:anuncio.Title" tal:content="string:${titulo}"></h1>
-            <img width="100" height="100" tal:define="url_pagina_atual python:context.getPhysicalPath();dir_img string:++widget++form.widgets.imagem/@@download/fff.jpg;img string:${url_pagina_atual}${dir_img}@@download/imagem.jpg" tal:attributes="src img" /> 
+            <img width="100" height="100" tal:define="url_pagina_atual python:context.getPhysicalPath()+'anuncios/'+anuncio.id+'/view/';dir_img string:++widget++form.widgets.imagem/@@download/fff.jpg;img string:${url_pagina_atual}${dir_img}" tal:attributes="src img" /> 
          </div>
          </div>
       </metal:block>
