@@ -1,0 +1,7 @@
+.anuncio-inativo{
+	display: none;
+}
+
+.anuncio-ativo{
+	display: block;
+}

@@ -17,6 +17,15 @@
       directory="static"
       />
 
+ <browser:resource
+     name="anuncios.js"
+     file="js/anuncios.js"
+     />
+
+<browser:resource
+     name="anuncios.css"
+     file="css/anuncios.css"
+     />
 
 
     <browser:page
