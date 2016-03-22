@@ -14,7 +14,7 @@
       <metal:block define-macro="main">
          <div id="anuncios" >
          <div tal:define="anuncios view/getAnuncios"  tal:attributes="class string:anuncio-ativo"  tal:repeat="anuncio anuncios" >
-            <h1 tal:define="titulo python:anuncio.getTitle()" tal:content="string:${titulo}"></h1>
+            <h1 tal:define="titulo python:anuncio.Title" tal:content="string:${titulo}"></h1>
              
          </div>
          </div>
