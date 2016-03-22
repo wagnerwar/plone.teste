@@ -5,7 +5,10 @@
       lang="en"
       metal:use-macro="context/main_template/macros/master"
       i18n:domain="plone">
-
+  <head>
+<link rel="stylesheet" type="text/css"
+      tal:attributes="href string:${context/@@plone_portal_state/portal_url}/++resource++anuncios.css" />
+  </head>
   <body>
     <metal:content-core fill-slot="main">
       <metal:block define-macro="main">
