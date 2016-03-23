@@ -9,7 +9,7 @@
   <body>
     <metal:content-core fill-slot="main">
       <metal:block define-macro="main">
-         <div id="anuncios" tal:define="catalog python:context.portal_catalog;anuncios python:catalog(path=path,portal_type='anuncio')" >
+         <div id="anuncios" tal:define="catalog python:context.portal_catalog;anuncios python:catalog(portal_type='anuncio')" >
          <div   tal:attributes="class string:anuncio-ativo"  tal:repeat="anuncio anuncios" >
             <h1 tal:define="titulo python:anuncio.getTitle()" tal:content="string:${titulo}"></h1>
              

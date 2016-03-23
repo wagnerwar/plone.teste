@@ -28,6 +28,9 @@
      file="css/anuncios.css"
      />
 <cmf:registerDirectory name="templates" directory="templates" recursive="True" />
+  <include
+      zcml:condition="have plone-4"
+      package="Products.CMFCore" file="permissions.zcml" />
 
     <browser:page
           for="*"
