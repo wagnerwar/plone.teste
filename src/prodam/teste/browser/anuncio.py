@@ -15,5 +15,9 @@ class Anuncios(BrowserView):
     def render(self):
         return self.index()
 
+
+    def getImage(self,item):
+        return  self.context.absolute_url_path()
+        
     def __call__(self):
         return self.render()
