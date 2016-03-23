@@ -2,6 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="prodam.teste">
 
   <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
@@ -26,7 +27,7 @@
      name="anuncios.css"
      file="css/anuncios.css"
      />
-
+<cmf:registerDirectory name="templates" directory="templates" recursive="True" />
 
     <browser:page
           for="*"
