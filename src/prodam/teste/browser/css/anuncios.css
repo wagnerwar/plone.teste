@@ -4,4 +4,13 @@
 
 .anuncio-ativo{
 	display: block;
+        border: 1px solid rgb(0, 0, 0);
+        width: 25%;
+        height: auto;
+        margin-left: 0.5em;
+        float: left;
+}
+#anuncios{
+	clear: both;
+        width: 600px;
 }
