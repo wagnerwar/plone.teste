@@ -59,7 +59,7 @@ class AnuncioTile(PersistentCoverTile):
         super(AnuncioTile, self).populate_with_object(obj)  # check permission
 
         if obj.portal_type in self.accepted_ct():
-            header = safe_unicode('Anuncio'))  # use collection's title as header
+            header = safe_unicode('Anuncio')  # use collection's title as header
 
             data_mgr = ITileDataManager(self)
             data_mgr.set({
