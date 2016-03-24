@@ -35,13 +35,6 @@
       zcml:condition="have plone-4"
       package="Products.CMFCore" file="permissions.zcml" />
 
-  <genericsetup:registerProfile
-      name="tile_anuncio"
-      title="Tiles anuncio"
-      directory="profiles/default"
-      description="Configuracao de Tiles para anuncio"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
 
 
 </configure>
