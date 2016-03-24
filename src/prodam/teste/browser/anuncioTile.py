@@ -64,7 +64,7 @@ class AnuncioTile(PersistentCoverTile):
             data_mgr = ITileDataManager(self)
             data_mgr.set({
                 'header': header,
-                'uuid': IUUID(obj),
+                'uuid': IUUID(obj)
             })
 
     def is_empty(self):
@@ -101,8 +101,9 @@ class AnuncioTile(PersistentCoverTile):
 
         uuid = self.data.get('uuid', None)
         obj = uuidToObject(uuid)
+        print(obj.results(batch=False))
         if uuid and obj:
-            results = obj.results(batch=False)[:size]
+            results = obj.results(batch=False)
             return results
         else:
             self.remove_relation()
