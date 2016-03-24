@@ -42,4 +42,18 @@
           class=".anuncio.Anuncios"
           />
 
+
+
+ <!-- MEU TILE PERSONALIZADO DE ANUNCIOS -->
+  <plone:tile
+      name="anuncios"
+      title="Lista de anuncios"
+      description="Listando anuncios"
+      icon="++resource++collective.cover/tile-collection.png"
+      add_permission="cmf.ModifyPortalContent"
+      schema=".anuncioTile.IAnuncioTile"
+      class=".anuncioTile.AnuncioTile"
+      permission="zope2.View"
+      for="*"
+      />
 </configure>
