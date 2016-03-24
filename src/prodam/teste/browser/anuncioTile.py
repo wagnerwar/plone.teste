@@ -101,7 +101,6 @@ class AnuncioTile(PersistentCoverTile):
 
         uuid = self.data.get('uuid', None)
         obj = uuidToObject(uuid)
-        print(obj.results(batch=False))
         if uuid and obj:
             results = obj.results(batch=False)
             return results
