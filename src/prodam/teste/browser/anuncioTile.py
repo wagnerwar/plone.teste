@@ -53,7 +53,7 @@ class AnuncioTile(PersistentCoverTile):
     def accepted_ct(self):
         """ Return a list of content types accepted by the tile.
         """
-        return ['anuncio']
+        return ['Collection']
 
     def populate_with_object(self, obj):
         super(AnuncioTile, self).populate_with_object(obj)  # check permission
