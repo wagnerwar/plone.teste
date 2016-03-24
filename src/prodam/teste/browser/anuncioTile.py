@@ -16,7 +16,7 @@ from prodam.tiles import _
 from zope import schema
 from zope.component import queryUtility
 from zope.schema import getFieldsInOrder
-
+from Products.CMFPlone.utils import safe_unicode
 
 class IAnuncioTile(IPersistentCoverTile, form.Schema):
     uuid = schema.TextLine(
