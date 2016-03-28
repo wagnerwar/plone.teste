@@ -42,6 +42,14 @@
           class=".anuncio.Anuncios"
           />
 
+<!-- Recuperando R7 notícias-->
+ <browser:page
+          for="*"
+          name="record_news"
+          permission="zope2.View"
+          class=".ws.WawaWs"
+          template="templates/wawa.pt"
+          />
 
 
  <!-- MEU TILE PERSONALIZADO DE ANUNCIOS -->

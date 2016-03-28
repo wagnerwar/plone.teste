@@ -1,0 +1,6 @@
+<div id="recordnews">
+   <tal:results tal:repeat="new view/listaNewsR7">
+         <h2 tal:content="string:${new}"></h2>
+   </tal:results>
+
+</div>
