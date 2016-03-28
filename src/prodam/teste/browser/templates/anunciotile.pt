@@ -16,7 +16,7 @@
       <div tal:condition="not:results">
         <p i18n:translate="">The collection doesn't have any results.</p>
       </div>
-
+         <p tal:content="view/data/total"></p>
       <div class="tile-header" tal:condition="view/show_header">
           <tal:fields repeat="field view/configured_fields">
             <tal:title define="htmltag python:field.get('htmltag', 'h1')"

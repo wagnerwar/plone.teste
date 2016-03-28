@@ -23,6 +23,9 @@ class IAnuncioTile(IPersistentCoverTile, form.Schema):
         title=_(u'UUID'),
         readonly=True,
     )
+
+    form.omitted('total')
+    form.no_omit(IDefaultConfigureForm, 'total')
     total = schema.List(
         title=_(u'Numero de itens para se exibir'),
         value_type=schema.TextLine(),
@@ -33,6 +36,7 @@ class IAnuncioTile(IPersistentCoverTile, form.Schema):
         title=_(u'Header'),
         required=False,
     )
+
     form.omitted('description')
     form.no_omit(IDefaultConfigureForm, 'description')
     description = schema.Text(
@@ -49,6 +53,10 @@ class IAnuncioTile(IPersistentCoverTile, form.Schema):
 
 class AnuncioTile(PersistentCoverTile):
     index = ViewPageTemplateFile('templates/anunciotile.pt')
+
+    is_configurable = True
+    is_editable = True
+
 
     def accepted_ct(self):
         """ Return a list of content types accepted by the tile.
@@ -93,17 +101,20 @@ class AnuncioTile(PersistentCoverTile):
         return scales.scale('image', scale)
 
 
+
     def results(self):
         self.configured_fields = self.get_configured_fields()
-        size_conf = [i for i in self.configured_fields if i['id'] == 'total']
-        size = size_conf
-
-
+        tile_conf = self.get_tile_configuration()
+        size = tile_conf.get('total',None)['size']
         uuid = self.data.get('uuid', None)
         obj = uuidToObject(uuid)
         if uuid and obj:
+            
             results = obj.results(batch=False)
-            return results
+            if(len(results) >= size):
+                return results[:size]
+            else:
+                return results
         else:
             self.remove_relation()
             return []
