@@ -14,7 +14,15 @@ class Anuncios(BrowserView):
     def render(self):
         return self.index()
 
-
+    def thumbnail(self, item):
+        """Return a thumbnail of an image if the item has an image field and
+        the field is visible in the tile.
+        :param item: [required]
+        :type item: content object
+        """
+        scale = 'large'  # we need the name only: 'mini'
+        scales = item.restrictedTraverse('@@images')
+        return scales.scale('image', scale)
         
     def __call__(self):
         return self.render()
