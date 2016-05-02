@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="prodam.teste">
+
+  <include package="plone.app.portlets" />
+
+    <plone:portlet
+        name="prodam.teste.anuncios"
+        interface=".anuncios.IAnuncios"
+        assignment=".anuncios.Assignment"
+        renderer=".anuncios.Renderer"
+        addview=".anuncios.AddForm"
+        editview=".anuncios.EditForm"
+        />
+
+
+</configure>
+

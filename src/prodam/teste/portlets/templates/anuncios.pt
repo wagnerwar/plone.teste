@@ -1,0 +1,17 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag=""
+      i18n:domain="prodam.portal">
+<dl class="portlet">
+    <header class="box">
+      <h3 class="maisBuscadosTitulo"><span tal:content="view/getTitle" /></h3>
+    </header>
+    <div class="anuncios-list anuncios-list" tal:condition="view/getAnuncios" tal:define="anuncios view/getAnuncios">
+      <div class="anuncios" tal:repeat="anuncio anuncios">
+            <p tal:content="python:anuncio.Description"/>
+      </div>
+    </div>
+</dl>
+</html>
+
