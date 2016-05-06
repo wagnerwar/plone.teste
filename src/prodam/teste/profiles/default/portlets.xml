@@ -13,6 +13,15 @@
    <for interface="plone.app.portlets.interfaces.IColumn" />
    <for interface="plone.app.portlets.interfaces.IDashboard" />
  </portlet>
-
+ <portlet
+   addview="prodam.teste.noticias"
+   title="Wawa Noticias"
+   description="Exibindo noticias."
+   i18n:attributes="title;
+                    description"
+   >
+   <for interface="plone.app.portlets.interfaces.IColumn" />
+   <for interface="plone.app.portlets.interfaces.IDashboard" />
+ </portlet>
 
 </portlets>

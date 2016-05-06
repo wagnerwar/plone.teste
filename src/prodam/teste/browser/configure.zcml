@@ -52,6 +52,39 @@
           />
 
 
+<!-- Meu logo-->
+    <browser:viewletManager
+        name="prodam.teste.manager.logo"
+        provides="prodam.teste.interfaces.ILogoViewletManager"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.BaseOrderedViewletManager"
+        />
+    <browser:viewlet
+        name="prodam.teste.logo"
+        manager="prodam.teste.interfaces.ILogoViewletManager"
+        class="prodam.teste.viewlets.LogoViewlet"
+        permission="zope2.View"
+        />
+
+
+<!-- Fim de meu logo -->
+
+<!-- FOOTER-->
+
+   <browser:viewletManager
+        name="prodam.teste.manager.footer"
+        provides="prodam.teste.interfaces.IFooterViewletManager"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.BaseOrderedViewletManager"
+        />
+    <browser:viewlet
+        name="prodam.teste.footer"
+        manager="prodam.teste.interfaces.IFooterViewletManager"
+        class="prodam.teste.viewlets.FooterViewlet"
+        permission="zope2.View"
+        />
+
+<!-- FIM FOOTER-->
  <!-- MEU TILE PERSONALIZADO DE ANUNCIOS -->
   <plone:tile
       name="anuncios"

@@ -1,0 +1,28 @@
+<footer id="footer-nav">
+  <div class="container-wrapper">
+    
+   <section class="width-16 first">
+
+   <div class="width-4 first">
+    <strong tal:define="conteudo python:view.getRecurso('wagner-rodape/governo-municipal')" tal:content="conteudo/Title"></strong>
+      <div tal:define="conteudo python:view.getRecurso('wagner-rodape/governo-municipal/governo-municipal')" tal:replace="structure python:conteudo.text.output"></div>
+     </div> 
+
+  <div class="width-4 first" tal:define="conteudo python:view.getRecurso('wagner-rodape/acontece-na-cidade')">
+    <strong  tal:content="conteudo/Title"></strong>
+    <ul class="lista" tal:define="path python:'/'.join(conteudo.getPhysicalPath());lista python:conteudo.portal_catalog(path=path,portal_type='Link') ">
+       <li tal:repeat="item lista"><a tal:attributes="href python:item.getObject().remoteUrl"  tal:content="item/Title"></a></li>
+          
+     </ul> 
+     </div>
+
+ <div class="width-4 first" tal:define="conteudo python:view.getRecurso('wagner-rodape/sao-paulo-para')">
+    <strong  tal:content="conteudo/Title"></strong>
+          
+     </div>
+
+</section>
+
+</div>
+
+</footer>

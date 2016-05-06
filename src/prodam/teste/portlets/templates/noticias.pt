@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+<dl class="portlet portletWawaNews">
+<h2 tal:content="python:view.data.title"></h2>
+
+<tal:news tal:condition="python:view.data.show_news">
+
+<div tal:repeat="new view/getNews">
+<a tal:attributes="href python:new.getObject().absolute_url_path()"><strong  tal:content="new/Title"></strong><a>
+
+
+    <tal:scales define="image python:new.getObject().restrictedTraverse('@@images/');
+                          thumbnail python:image.scale('image', width=130, height=105)">
+        <a tal:attributes="href python:new.getObject().absolute_url_path();">
+          <img tal:condition="thumbnail"
+               tal:attributes="src thumbnail/url;
+                               width thumbnail/width;
+                               height thumbnail/height;
+                               alt new/Title" />
+        </a>
+      </tal:scales>
+
+</div>
+</tal:news>
+<tal:notnews tal:condition="python:view.data.show_news == False">
+
+<p>Nenhuma noticia para ser exibida aqui</p>
+
+</tal:notnews>
+
+<tal:footer>
+<a tal:content="view/getFooterText" tal:attributes="href view/getFooterLink"></a>
+</tal:footer>
+</dl>
+</html>

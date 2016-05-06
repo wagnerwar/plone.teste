@@ -18,5 +18,19 @@
         />
 
 
+<!-- Novo portlet de noticias -->
+
+   <plone:portlet
+        name="prodam.teste.noticias"
+        interface=".noticias.INoticias"
+        assignment=".noticias.Assignment"
+        renderer=".noticias.Renderer"
+        addview=".noticias.AddForm"
+        editview=".noticias.EditForm"
+        />
+
+
+<!-- Novo portlet de noticias -->
+
 </configure>
 
