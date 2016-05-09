@@ -38,21 +38,10 @@
  <property
     name="model_source">&lt;model xmlns:i18n="http://xml.zope.org/namespaces/i18n" xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
     &lt;schema&gt;
-        &lt;field name="title" type="zope.schema.TextLine"&gt;
-          &lt;description/&gt;
-          &lt;required&gt;True&lt;/required&gt;
-          &lt;title&gt; titulo do anuncio&lt;/title&gt;
-        &lt;/field&gt;
-        &lt;field name="description" type="zope.schema.Text"&gt;
-          &lt;description/&gt;
-          &lt;required&gt;False&lt;/required&gt;
-          &lt;title&gt;Descricao do anuncio&lt;/title&gt;
-        &lt;/field&gt;
           &lt;field name="image" type="plone.namedfile.field.NamedBlobImage" marshal:primary="true"&gt;
         &lt;description/&gt;
         &lt;title i18n:translate="Image"&gt;Image&lt;/title&gt;
       &lt;/field&gt;
-      &lt;/fieldset&gt;
     &lt;/schema&gt;
   &lt;/model&gt;</property>
  <property
