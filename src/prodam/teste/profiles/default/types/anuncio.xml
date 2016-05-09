@@ -15,9 +15,9 @@
   <element value="Image"/>
  </property>
  <property name="allow_discussion">False</property>
- <property name="default_view">noticias_view</property>
+ <property name="default_view">anuncios_view</property>
  <property name="view_methods">
-  <element value="noticias_view"/>
+  <element value="anuncios_view"/>
  </property>
  <property name="default_view_fallback">False</property>
  <property name="add_permission">cmf.AddPortalContent</property>
