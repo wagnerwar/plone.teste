@@ -2,58 +2,38 @@
 <object name="anuncio" meta_type="Dexterity FTI" i18n:domain="plone"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
  <property name="title" i18n:translate="">anuncio</property>
- <property name="description" i18n:translate=""></property>
- <property name="icon_expr"></property>
+ <property name="description" i18n:translate="">Anuncio</property>
+ <property name="icon_expr">string:${portal_url}/document_icon.png</property>
  <property name="factory">anuncio</property>
- <property
-    name="add_view_expr">string:${folder_url}/++add++anuncio</property>
+ <property name="add_view_expr">string:${folder_url}/++add++anuncio</property>
  <property name="link_target"></property>
  <property name="immediate_view">view</property>
  <property name="global_allow">True</property>
  <property name="filter_content_types">True</property>
- <property name="allowed_content_types">
-  <element value="Image"/>
- </property>
+ <property name="allowed_content_types"/>
  <property name="allow_discussion">False</property>
-<!--
- <property name="default_view">anuncios_view</property>
+ <property name="default_view">view</property>
  <property name="view_methods">
-  <element value="anuncios_view"/>
+  <element value="view"/>
  </property>
--->
  <property name="default_view_fallback">False</property>
-<!--
-<property name="add_permission">cmf.AddPortalContent</property>
--->
- <property name="add_permission">
-  <element value="cmf.AddPortalContent"/>
-  <element value="plone.app.contenttypes.addImage"/>
-</property>
+ <property name="add_permission">cmf.AddPortalContent</property>
  <property name="klass">plone.dexterity.content.Container</property>
  <property name="behaviors">
   <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
   <element value="plone.app.content.interfaces.INameFromTitle"/>
-  <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/>
-  <element
-     value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation"/>
-  <element value="plone.app.relationfield.behavior.IRelatedItems"/>
-  <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
-  <element value="plone.app.versioningbehavior.behaviors.IVersionable"/>
-  <element
-     value="Products.CMFPlone.interfaces.constrains.ISelectableConstrainTypes"/>
  </property>
  <property name="schema"></property>
  <property
-    name="model_source">&lt;model xmlns:i18n="http://xml.zope.org/namespaces/i18n" xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
+    name="model_source">&lt;model xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
     &lt;schema&gt;
-          &lt;field name="image" type="plone.namedfile.field.NamedBlobImage" &gt;
-        &lt;description/&gt;
-        &lt;title i18n:translate="Image"&gt;Image&lt;/title&gt;
+      &lt;field name="image" type="plone.namedfile.field.NamedBlobImage"&gt;
+        &lt;description&gt;Banner&lt;/description&gt;
+        &lt;title&gt;image&lt;/title&gt;
       &lt;/field&gt;
     &lt;/schema&gt;
   &lt;/model&gt;</property>
- <property
-    name="model_file">plone.app.contenttypes.schema:anuncio.xml</property>
+ <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>
  <alias from="(Default)" to="(dynamic view)"/>
  <alias from="edit" to="@@edit"/>
