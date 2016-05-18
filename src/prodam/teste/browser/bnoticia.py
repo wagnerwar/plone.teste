@@ -14,5 +14,5 @@ class IBNoticia(model.Schema):
     bnoticias = RelationList(
         title=u"Noticias relacionadas",
         default=[],
-        value_type=RelationChoice(title=u"Noticias acerca do anuncio", source=ObjPathSourceBinder(portal_type='anuncio')),
+        value_type=RelationChoice(title=u"Noticias acerca do anuncio", source=ObjPathSourceBinder(portal_type='News Item')),
         required=False,)

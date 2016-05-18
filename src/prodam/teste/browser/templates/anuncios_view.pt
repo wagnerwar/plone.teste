@@ -29,7 +29,12 @@
                                alt python:anuncio.getObject().title" />
         </a>
       </tal:scales>
- 
+             <tal:bnoticias  tal:condition="python:anuncio.getObject().bnoticias">
+                <h2 tal:content="string:Noticias relacionadas"></h2>
+                <tal:items tal:repeat="item python:anuncio.getObject().bnoticias">
+                <a tal:attributes="href python:item.to_object.absolute_url()"><h3 tal:content="python:item.to_object.title"></h3></a>
+                </tal:items>
+             </tal:bnoticias>
 
             </div>
           
