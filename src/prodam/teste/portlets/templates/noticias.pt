@@ -8,7 +8,7 @@
 <tal:news tal:condition="python:view.data.show_news">
 
 <div tal:repeat="new view/getNews">
-<a tal:attributes="href python:new.getObject().absolute_url_path()"><strong  tal:content="new/Title"></strong><a>
+<a tal:attributes="href python:new.getObject().absolute_url_path()"><strong  tal:content="new/Title"></strong></a>
 
 
     <tal:scales define="image python:new.getObject().restrictedTraverse('@@images/');
