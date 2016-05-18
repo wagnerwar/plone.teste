@@ -33,6 +33,7 @@
                 <h2 i18n:translate="" >Related News</h2>
                 <tal:items tal:repeat="item python:anuncio.getObject().bnoticias">
                 <a tal:attributes="href python:item.to_object.absolute_url()"><h3 tal:content="python:item.to_object.title"></h3></a>
+                 <h2 i18n:translate="" >End of list of the Related News</h2>
                 </tal:items>
              </tal:bnoticias>
 
