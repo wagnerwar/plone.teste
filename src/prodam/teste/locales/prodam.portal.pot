@@ -1,0 +1,138 @@
+# Danilo Sartorelli Barbato <dadlobr@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.5\n"
+"POT-Creation-Date: 2016-05-18 19:41+0000\n"
+"PO-Revision-Date: 2015-07-17 10:05+0000\n"
+"Last-Translator: Danilo Sartorelli Barbato <dadlobr@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:20
+msgid ""
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:104
+msgid "Add Portlet News"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:105
+msgid "Add Portlet News."
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/anuncios.py:70
+msgid "Adicionando portlet de anuncio"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/anuncios.py:69
+msgid "Adicionar portlets de anuncio"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/profiles/default/portlets.xml
+msgid "Anuncios"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:25
+msgid "Count elements"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:26
+msgid "Count of the news"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/browser/anuncioTile.py:43
+msgid "Description"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:114
+msgid "Edit Portlet News"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:113
+msgid "Edit portlet news"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/anuncios.py:78
+msgid "Editando portlets de anuncio"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/anuncios.py:77
+msgid "Editando portlets de anuncios"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/profiles/default/portlets.xml
+msgid "Exibindo anuncios."
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/profiles/default/portlets.xml
+msgid "Exibindo noticias."
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:35
+msgid "Footer link"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:30
+msgid "Footer text"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/browser/anuncioTile.py:36
+msgid "Header"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:36
+msgid "Link of the footer portlet"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/anuncios.py:22
+msgid "Numero de anuncios para exibir"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/anuncios.py:21
+msgid "Numero de itens para exibir"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/browser/anuncioTile.py:30
+msgid "Numero de itens para se exibir"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/anuncios.py:16
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:14
+msgid "Portlet header"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/browser/templates/anuncios_view.pt:33
+msgid "Related News"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:19
+msgid "Show portlet header"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/browser/anuncioTile.py:50
+msgid "Title"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:31
+msgid "Title of the footer portlet"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/portlets/anuncios.py:17
+#: prodam.teste/src/prodam/teste/portlets/noticias.py:15
+msgid "Title of the rendered portlet"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/browser/anuncioTile.py:23
+msgid "UUID"
+msgstr ""
+
+#: prodam.teste/src/prodam/teste/profiles/default/portlets.xml
+msgid "Wawa Noticias"
+msgstr ""

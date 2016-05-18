@@ -1,0 +1,25 @@
+# Danilo Sartorelli Barbato <dadlobr@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.5\n"
+"POT-Creation-Date: 2016-05-18 19:41+0000\n"
+"PO-Revision-Date: 2015-07-17 10:05+0000\n"
+"Last-Translator: Danilo Sartorelli Barbato <dadlobr@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: pt_br\n"
+"Language-Name: Português brasileiro\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+"Language: pt-BR\n"
+
+#: prodam/teste/profiles/default/types/anuncio.xml
+msgid "Anuncio"
+msgstr ""
+
+#: prodam/teste/profiles/default/types/anuncio.xml
+msgid "anuncio"
+msgstr ""
