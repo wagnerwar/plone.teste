@@ -120,7 +120,7 @@ msgstr ""
 
 #: prodam/teste/browser/templates/anuncios_view.pt:33
 msgid "Related News"
-msgstr "Noticias relacionadas"
+msgstr "Noticias relacionadas nios"
 
 #: prodam/teste/portlets/noticias.py:19
 msgid "Show portlet header"
