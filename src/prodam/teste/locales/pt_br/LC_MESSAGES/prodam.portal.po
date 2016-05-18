@@ -77,6 +77,10 @@ msgstr ""
 msgid "Editando portlets de anuncios"
 msgstr ""
 
+#: prodam/teste/browser/templates/anuncios_view.pt:36
+msgid "End of list of the Related News"
+msgstr "Fim da lista de noticias relacionadas"
+
 #: prodam/teste/profiles/default/portlets.xml
 msgid "Exibindo anuncios."
 msgstr ""
