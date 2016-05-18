@@ -3,14 +3,17 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
-      i18n:domain="plone">
- <head>
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="prodam.portal"> 
+<head>
 <link rel="stylesheet" type="text/css"
       tal:attributes="href string:${context/@@plone_portal_state/portal_url}/++resource++anuncios.css" />
   
  </head>
 
   <body>
+<metal:content-core fill-slot="main">
+      <metal:block define-macro="main">
         <!-- INATIVOS -->
          <div id="anuncios" tal:define="vieu python:context.restrictedTraverse('listano');anuncios vieu/getAnuncios" >
          <div   tal:attributes="class string:anuncio-inativo"  tal:repeat="anuncio anuncios" >
@@ -23,15 +26,16 @@
                tal:attributes="src thumbnail/url;
                                width thumbnail/width;
                                height thumbnail/height;
-                               alt new/Title" />
+                               alt python:anuncio.getObject().title" />
         </a>
       </tal:scales>
  
-     
 
             </div>
           
          </div>
   <script type="text/javascript" tal:attributes="src string:${context/@@plone_portal_state/portal_url}/++resource++anuncios.js"></script>
-  </body>
+  </metal:block>
+</metal:content-core>  
+</body>
 </html>

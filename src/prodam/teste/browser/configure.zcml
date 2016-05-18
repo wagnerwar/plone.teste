@@ -97,4 +97,17 @@
       permission="zope2.View"
       for="*"
       />
+
+
+<!--Criação de um behavior com noticias relacionadas -->
+
+    <plone:behavior
+        title="Noticias relacionadas"
+        description="Implementa funcionalidade de exibicao de noticias relacionadas."
+        provides=".bnoticia.IBNoticia"
+        for="plone.dexterity.interfaces.IDexterityContent"
+        />
+
+
 </configure>
+
